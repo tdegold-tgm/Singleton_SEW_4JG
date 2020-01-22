@@ -1,1 +1,16 @@
-# Singleton_SEW_4JG
+# Singleton Design Pattern
+
+## Problemstellung
+
+
+
+## Definition
+
+
+
+## Beispiel für Singleton
+
+
+
+## Designprinzipien
+
