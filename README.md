@@ -49,7 +49,14 @@ String from s3 is this test is used to test the singleton design pattern
 
 **Vorteile:**
 
+* Zugriffskontrolle 
+* Singleton kann als Interface realisiert werden und dann durch `implement` spezialisiert werden.
+* Einzelinstanz wird nur erzeugt, wenn benötigt.
+* Singelton wird häufig in Kombination mit anderen **creational** Patterns verwendet. Oft wird es mit *Abstract-Factory* gekoppelt, um eine einzelne Factory-Instanz zu garantieren.
+
 
 
 **Nachteile:**
 
+* Wenn mehrere Threads parallel laufen und auf die Singleton-Klasse zugreifen muss gewährleistet werden, dass nur eine Instanz für alle Threads erzeugt wird. Das oben angeführte Beispiel würde pro Thread eine Instanz erzeugt werden. Dies kann durch das Schlüsselwort `synchronized` im Methodenkopf umgesetzt werden.
+* Sollte Singleton generisch umgesetzt werden, wird vom Compiler für jeden generic-Type eine Instanz erzeugt. Dies kann beabsichtigtes Verhalten sein, aber auch nicht. In diesem Fall muss auch diese Einschränkung implementiert werden.
