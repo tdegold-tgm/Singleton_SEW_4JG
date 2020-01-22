@@ -60,3 +60,9 @@ String from s3 is this test is used to test the singleton design pattern
 
 * Wenn mehrere Threads parallel laufen und auf die Singleton-Klasse zugreifen muss gewährleistet werden, dass nur eine Instanz für alle Threads erzeugt wird. Das oben angeführte Beispiel würde pro Thread eine Instanz erzeugt werden. Dies kann durch das Schlüsselwort `synchronized` im Methodenkopf umgesetzt werden.
 * Sollte Singleton generisch umgesetzt werden, wird vom Compiler für jeden generic-Type eine Instanz erzeugt. Dies kann beabsichtigtes Verhalten sein, aber auch nicht. In diesem Fall muss auch diese Einschränkung implementiert werden.
+
+---
+
+[1] https://de.m.wikibooks.org/wiki/Muster:_Java:_Singleton
+
+[2] https://www-geeksforgeeks-org.cdn.ampproject.org/v/s/www.geeksforgeeks.org/singleton-class-java/amp/?usqp=mq331AQCKAE%3D&amp_js_v=0.1#aoh=15796804724693&referrer=https%3A%2F%2Fwww.google.com&amp_tf=Von%20%251%24s&ampshare=https%3A%2F%2Fwww.geeksforgeeks.org%2Fsingleton-class-java%2F
