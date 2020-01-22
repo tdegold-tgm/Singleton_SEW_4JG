@@ -1,4 +1,4 @@
-public class TestSingleton {
+public class TestKlasse {
     public static void main(String[] args) {
         // use getInstance() multiple times
         Singleton s1 = Singleton.getInstance();
